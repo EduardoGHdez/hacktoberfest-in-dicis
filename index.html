@@ -8,25 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.nav-link {line-height: 90px}
-.fa-anchor,.fa-coffee, .fa-osi{font-size:200px; color:#FF9A56}
-.date{ font-size:100px; color: #01FFFF}
-.desktop  {display: block}
-.mobile   {display: none}
-.ug-logo  {width: auto; height: 90px;}
-.menu     {background-color: #2B81D9; line-height: 50px}
-@media only screen and (max-width: 600px) {
-  .desktop  {display: none;}
-  .mobile   {display: block}
-  .ug-logo  { width: auto; height: 50px;}
-  .fa-anchor,.fa-coffee, .fa-osi{font-size:170px}
-  .date{ font-size:50px}
-
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
 <!-- Navbar -->
@@ -34,21 +16,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: #2B81D9; color: white;">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large menu" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white"><img src="img/ugto.png" class="ug-logo"></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white nav-link">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white nav-link">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white nav-link">¿Hacktoberfest?</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white nav-link">¿Donde?</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">about</a>
+    <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-hover-white nav-link">¿Hacktoberfest?</a>
+    <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-hover-white nav-link">¿Donde?</a>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-container  w3-center" style="padding: 100px 0px; background-color:#582D41 ">
-  <img src="img/indicis.png" width="100%" height="auto" class="desktop">
+  <img src="img/indicis1.png" width="100%" height="auto" class="desktop">
   <img src="img/indicis_small.png" width="100%" height="auto" class="mobile">
-  <button class="w3-button  w3-padding-large w3-xlarge w3-margin-top" style="background-color:#FF9A56; color:white;">Registrate</button>
+  <form action="https://goo.gl/forms/g1C0fsoKtBHV8FHu2">
+    <button class="w3-button  w3-padding-large w3-xlarge w3-margin-top" style="background-color:#FF9A56; color:white;">Registrate</button>
+  </form>
 </header>
 <!--Date info-->
 <div class="w3-container w3-center w3-light-grey" style="padding: 50px 0px">
@@ -64,17 +49,51 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
         <span class="fas fa-map-marker-alt date"></span>
         <h3>DICIS</h3>
-        <p>Centro de computo</p>
     </div>
+</div>
+<!-- Schedule-->
+<div class="content" >
+  <ul class="schedule">
+    <li class="day"><h3>Programa</h3></li>
+    <li class="events">
+      <ul class="events-details">
+        <li>
+          <span class="event-time">9:00h</span>
+          <span class="event-name">Cómo conseguir un empleo al salir de la universidad: <br>Con Open Source</span><br>
+          <span class="event-sponsor">Ing. Jaime Loyola Rangel</span><br>
+          <span class="event-location">Auditorio 101</span>          
+        </li>
+        <li>
+            <span class="event-time">10:00h</span>
+            <span class="event-name">Taller básico de manejo de proyectos con git</span><br>
+            <span class="event-sponsor">Dr. Uriel Haile Hernández Belmonte</span><br>
+            <span class="event-location">Auditorio 101</span>            
+          </li>
+          <li>
+              <span class="event-time">12:00h</span>
+              <span class="event-name">Workshop </span><br>
+              <span class="event-sponsor">Codeando México</span><br>
+              <span class="event-location">Auditorio 101</span>              
+            </li>
+            <li>
+                <span class="event-time">12:00h</span>
+                <span class="event-name">Workshop </span><br>
+                <span class="event-sponsor">Ing. Jaime Loyola Rangel</span><br>
+                <span class="event-location">Salón</span>
+              </li>
+      </ul>
+    </li>
+
+  </ul>
 </div>
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Hacktoberfest?</h1>
-      <h5 class="w3-padding-32">
+      <h1><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest?</a></h1>
+      <h4 class="w3-padding-32">
         Es la celebracion del software libre (open source). Donde se invita a todas las personas a contribuir en algun proyecto hosteado en GitHub durante el mes de Octubre. 
-      </h5>
+      </h4>
     </div>
     <div class="w3-third w3-center">
       <i class="fab fa-osi w3-padding-64 "></i>
@@ -83,6 +102,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Second Grid -->
+<div class=fakeMenu>
+    <div class="fakeButtons fakeClose"></div>
+    <div class="fakeButtons fakeMinimize"></div>
+    <div class="fakeButtons fakeZoom"></div>
+  </div>
+  <div class="fakeScreen">
+    <p class="line1">&#91;&nbsp;&ldquo;¿Que estas esperando?&rdquo;,<span class="cursor1">_</span></p>
+    <p class="line2">&nbsp;&nbsp;&ldquo;Acercate a los organizadores del evento&rdquo;,<span class="cursor2">_</span></p>
+    <p class="line3">&nbsp;&nbsp;&ldquo;Podemos ayudarte antes y despues &rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
+    <p class="line4">><span class="cursor4">_</span></p>
+  </div>
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
@@ -91,30 +121,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     <div class="w3-twothird">
       <h1>Reglas</h1>
-      <p class="w3-text-grey">Para obtener la playera conmemorativa debes completar <b>5</b> pull request durante el mes de Octubre. Los puedes hacer en cualquier repo publico de GitHub.</p>
+      <h4 class="w3-text-grey">Para obtener la playera conmemorativa debes completar <b>5</b> pull request durante el mes de Octubre. Los puedes hacer en cualquier repo publico de GitHub.</h4>
     </div>
   </div>
 </div>
 <!--Thrid Grid-->
-<div class="w3-container w3-center " style="padding: 50px 0px"></div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.9728694133623!2d-101.1955591847636!3d20.507338410748737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c8fa123acd9b3%3A0x46854e59b62b0cbf!2sDivisi%C3%B3n+de+Ingenier%C3%ADas+Campus+Irapuato+Salamanca+DICIS!5e0!3m2!1sen!2smx!4v1538620503042" width="100%" height="auto" ></iframe>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+<div class="w3-container w3-center  " style="padding: 50px 0px; text-align: center; display: block">
+  <h1>¿Donde?</h1>
+  <h3>División de Ingenierías Campus Irapuato Salamanca DICIS</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.9728694133623!2d-101.1955591847636!3d20.507338410748737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c8fa123acd9b3%3A0x46854e59b62b0cbf!2sDivisi%C3%B3n+de+Ingenier%C3%ADas+Campus+Irapuato+Salamanca+DICIS!5e0!3m2!1sen!2smx!4v1538620503042" width="100%" height="400px" ></iframe>
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container" style="padding: 0px 0px">  
+  <img src="img/footer.png" width="100%" height="auto">
 </footer>
 
 <script>
